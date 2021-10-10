@@ -1,0 +1,17 @@
+{
+  "include": ["**/*.ts", "**/*.vue"],
+  "exclude": ["./node_modules/*"],
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "experimentalDecorators": true, // enable decorator
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "typeRoots": ["types", "node_modules/@types"],
+  },
+  "files": [
+    "./types/vue-shims.d.ts"
+  ]
+}
