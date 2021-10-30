@@ -27,8 +27,8 @@ export default class TodoEditMode extends Vue {
     TodoManager.toggleEditMode(this.todo);
   }
   
-  onEditDone(e) {
-    TodoManager.setMessage(this.todo, e.target.value);
+  onEditDone() {
+    TodoManager.setMessage(this.todo, this.editInput.value);
     TodoManager.toggleEditMode(this.todo);
   }
 
